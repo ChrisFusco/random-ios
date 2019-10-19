@@ -15,8 +15,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Properties
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var mealNameLabel: UILabel!
-    @IBOutlet weak var listnog: UITableView!
+    @IBOutlet weak var listnog: UILabel!
     @IBOutlet weak var nig: UILabel!
+    @IBOutlet weak var textnog: UITextView!
     enum RowAnimation: Int {
         case right = 1
     }
@@ -36,12 +37,18 @@ class ViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
     @IBAction func setDefaultLabelText(_ sender: UIButton) {
         nig.text = nameTextField.text
-        
-        listnog.beginUpdates()
-        listnog.insertRows(at: [IndexPath(row: nigArray.count, section: 0)], with: .automatic)
-        
-        //listnog.append(" " + nameTextField.text! + "\n")
+        mealNameLabel.text = nameTextField.text
+        //listnog.beginUpdates()
+        //listnog.insertRows(at: [IndexPath(row: nigArray.count, section: 0)], with: .automatic)
+        textnog.text?.append(" " + nameTextField.text! + "\n")
+        listnog.text = nameTextField.text
         nameTextField.text = ""
     }
+    @IBAction func
+        clearList(_ sender: UIButton) {
+        textnog.text = ""
+    }
+    
 }
+
 
