@@ -58,12 +58,14 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bzm-cT-pZU">
                                 <rect key="frame" x="144" y="73" width="87" height="20.333333333333329"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbV-ET-JA1">
                                 <rect key="frame" x="16" y="182" width="343" height="68"/>
+                                <gestureRecognizers/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,11 +89,12 @@
                                 <rect key="frame" x="300" y="201" width="36" height="30"/>
                                 <state key="normal" title="Clear"/>
                                 <connections>
-                                    <action selector="clearList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eUo-43-XUp"/>
+                                    <action selector="clearList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="41c-2Q-Ncb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="9Zh-7z-ocy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1HZ-9s-gA7"/>
                             <constraint firstItem="xXm-Cv-dcs" firstAttribute="top" secondItem="LbV-ET-JA1" secondAttribute="bottom" constant="8" id="1br-X5-IKP"/>
